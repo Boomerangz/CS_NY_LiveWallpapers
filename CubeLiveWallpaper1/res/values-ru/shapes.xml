@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="cube2_shapenames">
+        <item>"С дедом морозом"</item>
+        <item>"Со снеговиком"</item>
+        <item>"Вариант 1"</item>
+        <item>"Вариант 2"</item>
+        <item>"Вариант 3"</item>
+        <item>"Вариант 4"</item>
+    </string-array>
+    <string-array name="cube2_shapeprefix">
+        <item>"wallp_2"</item>
+        <item>"wallp_4"</item>
+        <item>"wallp_3"</item>
+        <item>"wallp_5"</item>
+        <item>"wallp_6"</item>
+        <item>"wallp_7"</item>
+    </string-array>
+
+</resources>

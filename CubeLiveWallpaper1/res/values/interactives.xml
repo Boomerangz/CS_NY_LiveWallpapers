@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="interactive_mode_names">
+        <item>"Enabled"</item>
+        <item>"Disabled"</item>
+        <item>"Invisible"</item>
+    </string-array>
+
+    <string-array name="interactive_mode_prefix">
+        <item>"active"</item>
+        <item>"inactive"</item>
+        <item>"invisible"</item>
+    </string-array>
+</resources>
