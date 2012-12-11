@@ -314,8 +314,7 @@ public class CSWallpaper extends WallpaperService
 							{
 								MyPoint point = new CreatedPoint((int) event.getX(), (int) event.getY(), mPaint, getBaseContext());
 								addPoint(point);
-							}
-							catch (Exception e)
+							} catch (Exception e)
 							{
 								e.printStackTrace();
 							}
@@ -463,11 +462,16 @@ public class CSWallpaper extends WallpaperService
 
 		private synchronized void addNewPoints()
 		{
-			for (MyPoint point : points_to_add)
+
+			for (int i = 0; i < points_to_add.size(); i++)
 			{
-				points.add(point);
-				if (TouchablePoint.class.isInstance(point))
-					t_points.add((TouchablePoint) point);
+				MyPoint point = points_to_add.get(i);
+				if (point != null)
+				{
+					points.add(point);
+					if (TouchablePoint.class.isInstance(point))
+						t_points.add((TouchablePoint) point);
+				}
 				if (points.size() > POINT_COUNT * 2)
 					points.get(0).destroy();
 			}
@@ -477,7 +481,10 @@ public class CSWallpaper extends WallpaperService
 				@Override
 				public int compare(MyPoint lhs, MyPoint rhs)
 				{
-					return lhs.size.compareTo(rhs.size);
+					if (lhs != null && rhs != null)
+						return lhs.size.compareTo(rhs.size);
+					else
+						return 0;
 				}
 			});
 		}
@@ -515,66 +522,6 @@ public class CSWallpaper extends WallpaperService
 				return null;
 			}
 		};
-
-		// class RotateTask extends AsyncTask
-		// {
-		// static final int count = 2;
-		//
-		// @Override
-		// protected Object doInBackground(Object... arg0)
-		// {
-		// Integer number = (Integer) arg0[0];
-		//
-		// while (!isCancelled())
-		// {
-		// int part = points.size() / count;
-		// Integer start = number * part;
-		// Integer end = (number + 1) * part - 1;
-		// Log.d("RotateTask", "size=" + points.size() + " start=" +
-		// start.toString() + " end=" + end.toString());
-		//
-		// if ((points.size() - 1) - end < part)
-		// end = points.size() - 1;
-		// List<MyPoint> pnts = new ArrayList<MyPoint>();
-		// Date dt_begin;
-		// synchronized (pnts)
-		// {
-		// synchronized (points)
-		// {
-		// if (start >= 0 && end < points.size() && end > 0)
-		// pnts = points.subList(start, end);
-		// }
-		// dt_begin = new Date();
-		//
-		// try
-		// {
-		// for (Iterator<MyPoint> it = pnts.iterator(); it.hasNext();)
-		// {
-		// MyPoint point = it.next();
-		// if (point != null)
-		// point.rotateImage();
-		// }
-		// } catch (java.util.ConcurrentModificationException e)
-		// {
-		// e.printStackTrace();
-		// }
-		// }
-		// Date dt_end = new Date();
-		// if (dt_end.getTime() - dt_begin.getTime() < 1000 / (fps / 1.5))
-		// {
-		// try
-		// {
-		// Thread.sleep(1000 / (int) (fps / 1.5) - (dt_end.getTime() -
-		// dt_begin.getTime()));
-		// } catch (InterruptedException e)
-		// {
-		// e.printStackTrace();
-		// }
-		// }
-		// }
-		// return null;
-		// }
-		// };
 
 		void drawBackground(Canvas c)
 		{
