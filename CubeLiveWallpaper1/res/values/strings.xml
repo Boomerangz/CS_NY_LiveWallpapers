@@ -35,8 +35,8 @@
     <string name="wallpaper_settings_summary">Choose your background image</string>
     <string name="snowfall_settings_title">Snowfall effect</string>
     <string name="snowfall_settings_summary">Choose snowfall effect</string>
-    <string name="interactive_settings_title">Interactivity</string>
-    <string name="interactive_settings_summary">Choose your interactivity</string>
+    <string name="interactive_settings_title">Character Interactivity</string>
+    <string name="interactive_settings_summary">Choose character interactivity</string>
     <string name="share_invite">Share via:</string>
     <string name="share_header">My choice!</string>
     <string name="share_text">Christmas live wallpaper for Android from Crystal Spring: play.google.com/store/apps/details?id=kz.crystalspring.livewallpaper</string>

@@ -3,7 +3,7 @@
      <string-array name="interactive_mode_names">
         <item>"Enabled"</item>
         <item>"Disabled"</item>
-        <item>"Invisible"</item>
+        <item>"Character invisible"</item>
     </string-array>
 
     <string-array name="interactive_mode_prefix">
