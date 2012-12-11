@@ -117,7 +117,7 @@ public class Santa extends InteractiveObject
 	@Override
 	protected void draw(Canvas c, float localOffset)
 	{
-		x = (int) (-glWidth / 2 - (localOffset * glWidth));
+		x = (int) (0 - ((localOffset) * glWidth));
 		y = (int) (glHeight / 2 - santa.getHeight() * 1.1);
 		c.drawBitmap(santa, x, y, paint);
 	}

@@ -7,7 +7,8 @@
         <item>"Вариант 1"</item>
         <item>"Вариант 2"</item>
         <item>"Вариант 3"</item>
-        <item>"Вариант 4"</item>
+        <item>"Алматы 1"</item>
+        <item>"Алматы 2"</item>
     </string-array>
     <string-array name="cube2_shapeprefix">
         <item>"wallp_2"</item>
@@ -16,6 +17,7 @@
         <item>"wallp_5"</item>
         <item>"wallp_6"</item>
         <item>"wallp_7"</item>
+        <item>"wallp_8"</item>
     </string-array>
 
 </resources>

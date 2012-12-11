@@ -18,6 +18,7 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <!-- General -->
     <skip />
     <!-- Application name -->
@@ -25,7 +26,9 @@
 
     <!-- Wallpaper showing a cube -->
 
+
     <!-- Wallpaper showing a cube or dodecahedron, data read from resource -->
+
 
     <!-- Wallpaper showing a cube, renderscript version -->
 
@@ -37,7 +40,9 @@
     <string name="snowfall_settings_summary">Выберите характер снегопада на рабочем столе</string>
     <string name="interactive_settings_title">Интерактивность</string>
     <string name="interactive_settings_summary">Выберите настройки интерактивности</string>
-   <string name="share_invite">Поделиться через:</string>
+    <string name="share_invite">Поделиться через:</string>
     <string name="share_header">Рекомендую!</string>
     <string name="share_text">Новогодние живые обои под Android от Crystal Spring: play.google.com/store/apps/details?id=kz.crystalspring.livewallpaper</string>
+    <string name="invite">Выберите 1234 из списка</string>
+
 </resources>

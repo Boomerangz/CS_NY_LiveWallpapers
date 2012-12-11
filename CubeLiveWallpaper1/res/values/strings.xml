@@ -40,5 +40,5 @@
     <string name="share_invite">Share via:</string>
     <string name="share_header">My choice!</string>
     <string name="share_text">Christmas live wallpaper for Android from Crystal Spring: play.google.com/store/apps/details?id=kz.crystalspring.livewallpaper</string>
-    
+    <string name="invite">Choose 1234 from list</string>
 </resources>

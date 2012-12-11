@@ -48,6 +48,7 @@ public final class R {
         public static final int wallp_5=0x7f020017;
         public static final int wallp_6=0x7f020018;
         public static final int wallp_7=0x7f020019;
+        public static final int wallp_8=0x7f02001a;
     }
     public static final class id {
         public static final int button1=0x7f090000;
@@ -58,6 +59,7 @@ public final class R {
     public static final class string {
         public static final int interactive_settings_summary=0x7f070008;
         public static final int interactive_settings_title=0x7f070007;
+        public static final int invite=0x7f07000c;
         /**  Wallpaper showing a cube 
  Wallpaper showing a cube or dodecahedron, data read from resource 
  Wallpaper showing a cube, renderscript version 

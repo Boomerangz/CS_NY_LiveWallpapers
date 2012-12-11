@@ -19,10 +19,10 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="kz.crystalspring.livewallpaper"
-    android:versionCode="3"
-    android:versionName="1.0" >
+    android:versionCode="5"
+    android:versionName="1.2" >
 
-    <uses-sdk android:minSdkVersion="7" />
+    <uses-sdk android:minSdkVersion="8" />
 
     <uses-feature android:name="android.software.live_wallpaper" />
 
@@ -33,7 +33,7 @@
     <application
         android:icon="@drawable/icon"
         android:label="@string/wallpapers"
-        android:largeHeap="true">
+        android:largeHeap="true" >
         <service
             android:name=".CSWallpaper"
             android:label="@string/wallpapers"
@@ -52,6 +52,13 @@
             android:exported="true"
             android:label="@string/settings"
             android:theme="@android:style/Theme.Light.WallpaperSettings" >
+        </activity>
+        <activity
+            android:name=".CSSetWallpaperActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

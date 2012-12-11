@@ -162,6 +162,8 @@ public class CSWallpaper extends WallpaperService
 				big_back_id = R.drawable.wallp_6;
 			else if (wallpaper_id.equals("wallp_7"))
 				big_back_id = R.drawable.wallp_7;
+			else if (wallpaper_id.equals("wallp_8"))
+				big_back_id = R.drawable.wallp_8;
 			if (mWidth > 0 && mHeight > 0)
 			{
 				createRealBackground(mWidth, mHeight);

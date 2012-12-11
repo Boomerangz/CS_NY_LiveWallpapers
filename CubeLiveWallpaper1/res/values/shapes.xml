@@ -7,7 +7,8 @@
         <item>"Wallpaper 1"</item>
         <item>"Wallpaper 2"</item>
         <item>"Wallpaper 3"</item>
-        <item>"Wallpaper 4"</item>
+        <item>"Almaty 1"</item>
+        <item>"Almaty 2"</item>
     </string-array>
     <string-array name="cube2_shapeprefix">
         <item>"wallp_2"</item>
@@ -16,6 +17,7 @@
         <item>"wallp_5"</item>
         <item>"wallp_6"</item>
         <item>"wallp_7"</item>
+        <item>"wallp_8"</item>
     </string-array>
 
 </resources>
