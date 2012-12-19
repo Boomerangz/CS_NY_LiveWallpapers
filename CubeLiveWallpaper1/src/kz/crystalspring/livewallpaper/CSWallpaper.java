@@ -431,7 +431,7 @@ public class CSWallpaper extends WallpaperService
 							float touch = (float) (Math.random() * 100);
 							double rand_x;
 							double rand_y;
-							if (touch < 0.005)
+							if (touch < 0.025)
 							{
 								rand_y = 0;
 								rand_x = (Math.random() * width);
