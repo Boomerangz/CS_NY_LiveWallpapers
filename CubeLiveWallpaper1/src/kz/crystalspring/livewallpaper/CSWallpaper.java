@@ -22,6 +22,7 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.RejectedExecutionException;
 
 import com.boomerang.drawobjects.AppPoint;
 import com.boomerang.drawobjects.CreatedPoint;
@@ -321,7 +322,13 @@ public class CSWallpaper extends WallpaperService
 							return null;
 						}
 					};
-					task.execute();
+					try
+					{
+						task.execute();
+					} catch (RejectedExecutionException e)
+					{
+						e.printStackTrace();
+					}
 				}
 				create = !create;
 				if (event.getAction() == MotionEvent.ACTION_DOWN)
@@ -481,10 +488,17 @@ public class CSWallpaper extends WallpaperService
 				@Override
 				public int compare(MyPoint lhs, MyPoint rhs)
 				{
-					if (lhs != null && rhs != null)
-						return lhs.size.compareTo(rhs.size);
-					else
+					try
+					{
+						if (lhs != null && rhs != null)
+							return lhs.size.compareTo(rhs.size);
+						else
+							return 0;
+					} catch (Exception e)
+					{
+						lhs.destroy();
 						return 0;
+					}
 				}
 			});
 		}
